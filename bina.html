@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" >
+    <title>Document</title>
+    <link rel="stylesheet" href="bina.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+   crossorigin="anonymous">
+</head>
+<body>
+    <div class="main_head">
+
+        <div class="header_nav_bar">
+            <div class="phone">
+                <span class="phone_title">Dəstək xidməti:</span>
+                <span class="phone_list">012) 599-08-02 (012) 505-08-02</span>
+            </div>
+            <div class="right_head">
+                <a href="#">Ru</a>
+                <i class="fas fa-heart" style="color: white;margin: 0px 5px 0px 40px;"></i>
+                <a href="#">Seçilmişlər</a>
+                <i class="fas fa-user" style="color:white; margin: 0px 5px 0px 40px;"></i>
+                <a href="#">Giriş</a>
+            </div>
+        </div>
+        <div class="second_nav">
+            <a href="#" class="head">BİNA.AZ</a>
+            <a href="#">Alqı-satqı</a>
+            <a href="#">Kirayə</a>
+            <a href="#">Agentliklər</a>
+            <a href="#">Yaşayış kompleksləri</a>
+            <a href="#">Biznes mərkəzləri</a>
+          
+            <a href="#"><span class="material-icons" style="color:white; font-size:25px; vertical-align: middle;">add_circle_outline</span>
+            Elan yerləşdir</a>
+        </div>
+        <div class="search_bar">
+            <div class="sel1">
+            <select class="sel_al">
+                <option value="0" selected>Alış</option>
+                <option value="1">Satış</option>
+            </select>
+        </div>
+        <div class="sel2">
+            <select class="sel_men">
+                <option value="2">Mənzil</option>
+                <option value="3">Yeni tikili</option>
+                <option value="3">Köhnə tikili</option>
+                <option value="3">Ev / villa</option>
+                <option value="3" selected>Bağ</option>
+                <option value="3">Ofis</option>
+                <option value="3">Qaraj</option>
+                <option value="3">Torpaq</option>
+                <option value="3">Obyekt</option>
+            </select>
+        </div>
+      <div class="area">
+     <details>
+         <summary>Otaq sayı</summary>
+         <div class="area_check">
+            <p><input type="checkbox" id="all">İstənilən otaq sayı</p>
+            <p><input type="checkbox" id="one">1 otaqlı</p>
+            <p><input type="checkbox" id="two">2 otaqlı</p>
+            <p><input type="checkbox" id="three">3 otaqlı</p>
+            <p><input type="checkbox" id="four">4 otaqlı</p>
+            <p><input type="checkbox" id="five">5 və daha çox otaqlı</p>
+            </div>
+        
+     </details>
+          
+      </div>
+      <div class="price">
+      <details>
+            <summary>Qiymət, AZN</summary>
+             <div class="hide_inp">
+                 <input type="number" onclick="change();" id="numb" name="numb" placeholder="min.">
+                 <input type="number" onclick="change();" id="numb2" name="numb2" placeholder="maks.">
+             </div>
+           </details>
+    </div>
+    <div >
+    <select class="sel_city">
+        <option value="0">İstənilən şəhər</option>
+        <option value="0">Ağdam</option>
+        <option value="0">Ağcabədi</option>
+        <option value="0">Ağdam</option>
+        <option value="0">Ağdaş</option>
+        <option value="0">Ağstafa</option>
+        <option value="0">Ağsu</option>
+        <option value="0">Astara</option>
+        <option value="0" selected>Bakı</option>
+        <option value="0">Balakən</option>
+        <option value="0">Beyləqan</option>
+        <option value="0">Bərdə</option>
+        <option value="0">Biləsuvar</option>
+        <option value="0">Cəbrayıl</option>
+        <option value="0">Cəlilabad</option>
+        <option value="0">Dəliməmmədli</option>
+        <option value="0">Füzuli</option>
+        <option value="0">Gədəbəy</option>
+        <option value="0">Gəncə</option>
+        <option value="0">Goranboy</option>
+        <option value="0">Göyçay</option>
+        <option value="0">Göygöl</option>
+        <option value="0">Göytəpə</option>
+        <option value="0">Hacıqabul</option>
+        <option value="0">İmişli</option>
+        <option value="0">İsmayıllı</option>
+        <option value="0">Kürdəmir</option>
+        <option value="0">Lerik</option>
+        <option value="0">Lənkəran</option>
+        <option value="0">Liman</option>
+        <option value="0">Masallı</option>
+        <option value="0">Mingəçevir</option>
+        <option value="0">Naftalan</option>
+        <option value="0">Naxçıvan</option>
+        <option value="0">Neftçala</option>
+        <option value="0">Oğuz</option>
+        <option value="0">Ordubad</option>
+        <option value="0">Qax</option>
+        <option value="0">Qazax</option>
+        <option value="0">Qəbələ</option>
+        <option value="0">Qobustan</option>
+        <option value="0">Quba</option>
+        <option value="0">Qusar</option>
+        <option value="0">Saatlı</option>
+        <option value="0">Sabirabad</option>
+        <option value="0">Salyan</option>
+        <option value="0">Şabran</option>
+        <option value="0">Şamaxı</option>
+        <option value="0">Samux</option>
+        <option value="0">Şəki</option>
+        <option value="0">Şəmkir</option>
+        <option value="0">Şərur</option>
+        <option value="0">Şirvan</option>
+        <option value="0">Siyəzən</option>
+        <option value="0">Sumqayıt</option> 
+        <option value="0">Tərtər</option>  
+        <option value="0">Tovuz</option>       
+        <option value="0">Ucar</option>       
+        <option value="0">Xaçmaz</option>       
+        <option value="0">Xırdalan</option>
+        <option value="0">Xızı</option>
+        <option value="0">Xudat</option>
+        <option value="0">Yardımlı</option>
+        <option value="0">Yevlax</option>
+        <option value="0">Zaqatala</option>
+        <option value="0">Zərdab</option>
+        <option value="0">Zəngilan</option>
+        <option value="0">Laçın</option>
+        <option value="0">Şuşa</option>
+        <option value="0">Qubadlı</option> 
+    </select>
+</div>
+         <div class="detailed_search">
+            <details>
+                <summary>Ətraflı axtarış</summary>
+                <form>
+                <div class="wide_search_form">
+                <div class="wide_search_form1">
+                <div>
+                    <h5>Sahə m<sup>2</sup></h5>
+                    <input type="number" placeholder="min.">
+                    <input type="number" placeholder="maks.">
+                </div>
+                <div class="count"><h6>35532 elan yerləşdirilib</h6></div>
+
+                </div>
+                <div class="wide_search_form2">
+                    <div>
+                        <h4>Mərtəbə</h4>
+                        <input type="number" placeholder="min.">
+                        <input type="number" placeholder="maks.">
+                    </div>
+                    <div class="check_floor">
+                       <p><input type="checkbox">1-ci olmasın</p>
+                       <p><input type="checkbox">Ən üst olamasın olmasın</p>
+                        <p> <input type="checkbox">Yalnz ən üst</p>
+                    </div>
+                   
+                </div>
+                <div class="wide_search_form3">
+                      <div class="title">Yerləşmə</div>
+                      <div class="filter">
+                    <div class="filter_in" href="#">Rayon və qəsəbələr</div>
+                    <div class="filter_in" href="#">Metrostansiyalar</div>
+                    <div class="filter_in" href="#">Nişangahlar</div>
+                </div>
+                </div>
+                <div class="wide_search_form4">
+                    <div class="title2">Elanın nömrəsi</div>
+                    <div class="filter2">
+                    <div><input type="text"></div>
+                    <p><input type="checkbox">Çıxarış var</p>
+                    <p><input type="checkbox">İpoteka var</p>
+                </div>
+                </div>
+                <div class="wide_search_form5">
+                <a href="#">Gizlət</a>
+                <input type="reset" value="Sıfırla">
+                <input type="button" value="19247 elan göstər">
+                    </div>
+                </div>
+               
+               </form>
+            </details>
+        </div>
+         
+         <div href="#" class="search">
+            Axtar 
+        </div>
+    </div>
+    </div>
+    <div class="section_top">
+    <div class="explan">
+        <div class="links_header">
+            <div class="head1">Alış</div>
+            <div class="head2">Kirayə</div>
+            <a href="#">Bugün - 364 elan</a>
+        </div>
+        <div class="links">
+            <div class="links1">
+                <p>Yeni Tikililər</p>
+                <ul>
+                    <li><a href="#">1-otaqlı</a></li>
+                    <li><a href="#">2-otaqlı</a></li>
+                    <li><a href="#">3-otaqlı</a></li>
+                    <li><a href="#">4-otaqlı</a></li>
+                    <li><a href="#">5 otaq və daha çox</a></li>
+                </ul>
+            </div>
+            <div class="links2">
+                <p>Köhnə Tikiliər</p>
+                <ul>
+                    <li><a href="#">1-otaqlı</a></li>
+                    <li><a href="#">2-otaqlı</a></li>
+                    <li><a href="#">3-otaqlı</a></li>
+                    <li><a href="#">4-otaqlı</a></li>
+                    <li><a href="#">5 otaq və daha çox</a></li>
+                </ul>
+
+            </div>
+            <div class="links3">
+                <p>Yaşayış obyektləri</p>
+                <ul>
+                    <li><a href="#">Mənzillər</a></li>
+                    <li><a href="#">Yeni tikililər</a></li>
+                    <li><a href="#">Köhnə tikililər</a></li>
+                    <li><a href="#">Evlər/Villalar</a></li>
+                    <li><a href="#">Bağlar</a></li>
+                </ul>
+            </div>
+            <div class="links4">
+                <p>Ticarət obyektləri</p>
+                <ul>
+                    <li><a href="#">Ofislər</a></li>
+                    <li><a href="#">Qarajlar</a></li>
+                    <li><a href="#">Torpaq sahələri</a></li>
+                    <li><a href="#">Obyektlər</a></li>
+                </ul>
+            </div>
+        
+        </div>
+        </div>
+        <div class="explan2">
+            <div class="btn_link1" ><p><i class="fas fa-couch" style="color: #3d5af3; font-size: 1.5em; vertical-align: center; margin-left: 0; "></i>
+                Günlük kirayə evlər <br>135 elan</p>
+            
+            </div>
+            <div class="btn_link2"href="#" ><p><i class="fas fa-globe-europe"style="color: #3d5af3; font-size: 1.5em;"></i>
+                Xəritə üzrə axtarış<br> 34912 elan</p>
+    </div>
+            <div class="btn_link3"href="#" ><p><i class="fas fa-tools" style="color: #3d5af3; font-size: 1.5em;"></i>
+                Tikinti xidmələri <br>3650 elan</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="section">
+        <div class="gallery">
+            <div class="image">
+            <a href="#"><img src="assests/images.jpg" alt="" width="229px" height="180px" ></a>
+            <div class="over_image">135 000 AZN</div>
+        </div>
+            
+            <div class="desc"><h4>Nəsimi r.</h4>
+                2 otaqlı  70m<sup>2</sup> 6/17 mərtəbə    
+            </div>
+        
+            </div>
+
+       <div class="gallery">
+             <div class="image">
+                <a href="#"><img src="assests/images (1).jpg" alt="" width="229px" height="180px" ></a>
+                <div class="over_image">118 000 AZN</div>
+            </div>
+                
+            <div class="desc"><h4>Yasamal r.</h4>
+                3 otaqlı  105m<sup>2</sup> 4/20 mərtəbə   
+            </div>
+            
+            </div>
+      
+        <div class="gallery">
+              <div class="image">
+                <a href="#"><img src="assests/images (2).jpg" alt="" width="229px" height="180px" ></a>
+             <div class="over_image">95 000</div>
+             </div>
+                    
+            <div class="desc"><h4>Binəqədi r.</h4>
+                2 otaqlı  90m<sup>2</sup> 11/18 mərtəbə   
+                </div>
+                
+        </div>
+      
+        <div class="gallery">
+            <div class="image">
+                 <a href="#"><img src="assests/indir.jpg" alt="" width="229px" height="180px" ></a>
+             <div class="over_image">55 000 AZN</div>
+             </div>
+                
+             <div class="desc"><h4>Bilgəh q.</h4>
+                3 otaqlı  110m<sup>2</sup>
+             </div>
+                    
+        </div>
+      
+        <div class="gallery">
+            <div class="image">
+                <a href="#"><img src="assests/indir (1).jpg" alt="" width="229px" height="180px" ></a>
+            <div class="over_image">70 000</div>
+            </div>
+                            
+            <div class="desc"><h4>Məmmədli q.</h4>
+                5 otaqlı  130m<sup>2</sup>
+             </div>
+                        
+        </div>
+      
+        <div class="gallery">
+            <div class="image">
+                <a href="#"><img src="assests/unnamed.jpg" alt="" width="229px" height="180px" ></a>
+            <div class="over_image">500 AZN/ay</div>
+            </div>
+                                
+            <div class="desc"><h4>Xətai r.</h4>
+                3otaqlı  90m<sup>2</sup> 5/15 mərtəbə  
+            </div>
+                            
+            </div>
+      
+        <div class="gallery">
+            <div class="image">
+                <a href="#"><img src="assests/home.jpg" alt="" width="229px" height="180px" ></a>
+            <div class="over_image">175 000 AZN</div>
+            </div>
+                                    
+            <div class="desc"><h4>Balaxanı q.</h4>
+                6 otaqlı  150m<sup>2</sup> 
+            </div>
+                                
+            </div>
+        <div class="gallery">
+            <div class="image">
+                <a href="#"><img src="assests/home2.jpg" alt="" width="229px" height="180px" ></a>
+            <div class="over_image">350 AZN/ay</div>
+            </div>
+                                        
+            <div class="desc"><h4>Elmlər Akademiyası</h4>
+                2 otaqlı  60m<sup>2</sup> 5/15 mərtəbə  
+            </div>
+                                    
+        </div>
+      
+        <div class="gallery">
+            <div class="image">
+                 <a href="#"><img src="assests/home3.png" alt="" width="229px" height="180px" ></a>
+            <div class="over_image">120 000 AZN</div>
+            </div>
+                                            
+            <div class="desc"><h4>Xətai r.</h4>
+                3 otaqlı  90m<sup>2</sup> 6/20 mərtəbə  
+            </div>
+                                        
+            </div>
+      
+        <div class="gallery">
+            <div class="image">
+                <a href="#"><img src="assests/grand.jpg" alt="" width="229px" height="180px" ></a>
+            <div class="over_image">220 000 AZN</div>
+            </div>
+                                                
+            <div class="desc"><h4>Yasamal r.</h4>
+                3 otaqlı  105m<sup>2</sup> 8/25 mərtəbə  
+            </div>
+                                            
+    </div>
+    <div class="gallery">
+        <div class="image">
+            <a href="#"><img src="assests/elm.jpg" alt="" width="229px" height="180px" ></a>
+        <div class="over_image">250 000</div>
+        </div>
+                                            
+        <div class="desc"><h4>Elmlər Akademiyası</h4>
+            4 otaqlı  120 <sup>2</sup> 12/26 mərtəbə  
+        </div>
+                                        
+</div>
+    <div class="gallery">
+    <div class="image">
+        <a href="#"><img src="assests/5d4177bbf176e.jpg" alt="" width="229px" height="180px" ></a>
+    <div class="over_image">180 000 AZN</div>
+    </div>
+                                        
+    <div class="desc"><h4>Xəzər r.</h4>
+        5 otaqlı  140m<sup>2</sup>
+    </div>
+                                    
+</div>
+      
+    </div>
+</body>
+</html>
